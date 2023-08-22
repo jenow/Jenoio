@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:jenoio/main.dart';
+import 'package:jenoio/flame_layer/jenoio_game.dart';
 
-class Food extends SpriteAnimationComponent with HasGameRef<JenoIo> {
+class Food extends SpriteAnimationComponent with HasGameRef<JenoioGame> {
   static Vector2 maxSize = Vector2.all(30.0);
   static final Random random = Random();
   Vector2? pos;

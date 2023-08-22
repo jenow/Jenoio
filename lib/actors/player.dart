@@ -2,10 +2,10 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:jenoio/actors/enemy.dart';
 import 'package:jenoio/actors/food.dart';
-import 'package:jenoio/main.dart';
+import 'package:jenoio/flame_layer/jenoio_game.dart';
 
 class Player extends SpriteAnimationComponent
-    with HasGameRef<JenoIo>, CollisionCallbacks {
+    with HasGameRef<JenoioGame>, CollisionCallbacks {
   static Vector2 initialSize = Vector2.all(50.0);
   Vector2 velocity = Vector2.zero();
   final double moveSpeed = 200;
